@@ -37,7 +37,7 @@ main {
 }
 
 .bg {
-    color: grey;
+    background-color: dark-grey;
     background-size: cover;
     background-position: center;
     height: 40vh;
