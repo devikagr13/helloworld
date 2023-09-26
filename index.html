@@ -11,9 +11,16 @@
   })();
 </script>
 <!-- End Matomo Tag Manager -->
-   <script> document.addEventListener("cookieyes_consent_update", function (eventData) 
-{_mtm.push({"event": "analytics-yes"});
-});</script>
+
+   <script>
+  document.addEventListener("cookieyes_consent_update", function (eventData)
+ {
+   const data = eventData.detail;
+   if (data.accepted.includes("analytics")) {
+     _mtm.push({"event": "analytics-yes"});
+    }
+  });
+  </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World</title>
     <link rel="stylesheet" href="styles.css">
