@@ -16,7 +16,7 @@
   document.addEventListener("cookieyes_consent_update", function (eventData)
  {
    const data = eventData.detail;
-   if (data.accepted.includes("other")) {
+   if (data.accepted.includes("analytics")) {
      _mtm.push({"event": "analytics-yes"});
     }
   });
